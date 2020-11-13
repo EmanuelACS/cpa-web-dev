@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white
+        }
+
+        .jumbotron{
+            background-color:darkslategrey;
+        }
+        .container div {
+            border: solid white
+        }
+        img {
+            height: 320px;
+            display:block;
+            margin: auto;
+        }
+        img.thumb{
+            height: 80px;
+            margin: auto;
+            display:inline
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header class="jumbotron">
+        <div class="display-1">
+            Animals
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-4">
+                <form action="">
+                    <label for="koala">Koala</label>
+                    <input type="radio" name="animal" id="koala" onclick="image.src='images/Koala.jpg'">
+                    <br>
+                    <label for="lynx">Lynx</label>
+                    <input type="radio" name="animal" id="lynx" onclick="image.src='images/lynx.jpg'">
+                    <br>
+                    <label for="meerkat">Meerkat</label>
+                    <input type="radio" name="animal" id="meerkat" onclick="image.src='images/meerkat.jpg'"><br>
+
+                    <label for="red-panda">Red Panda</label>
+                    <input type="radio" name="animal" id="red-panda" onclick="image.src='images/Red-panda.jpg'">
+                    <br>
+                    <br>
+                    <label >Koala</label>
+                    <input type="checkbox" name=""  
+                        onclick="if (checked) addImage(images,'Koala')">
+                    <br>
+                    <label >Lynx</label>
+                    <input type="checkbox" name=""
+                        onclick="if (checked) addImage(images,'Lynx')"
+                    >
+                    <br>
+                    <label >Meerkat</label>
+                    <input type="checkbox" name=""
+                    onclick="if (checked) addImage(images,'Meerkat')"
+                    >
+                    <br>
+                    <br>
+                    <button onclick="image.src=''">Clear</button>
+                </form>
+            </div>
+
+            <div class="col-4" >
+                <img src="" alt="" id="image">
+            </div>
+            <div class="col-4" id="images">
+
+            </div>
+        </div> <!-- row -->
+    </section>
+
+    <script>
+        function addImage(target,animal)
+        {
+            var imageFile = "images/" + animal + ".jpg"
+            images.innerHTML += "<img src=" + imageFile + " class='thumb'>"
+        }
+
+
+    </script>
+
+</body>
+
+</html>

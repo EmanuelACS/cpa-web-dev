@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- TODO
+        Set display property of "container" section to "flex"
+        Remove the "float" property from the articles 
+        (there will be no change to the display)
+    -->
+
+    <style>
+        
+
+        header {
+            background-color: lightcyan;
+            padding: 10px
+        }
+
+        nav {
+            background-color: darkseagreen;
+            padding: 10px
+        }
+
+        section {
+            background-color: lightgray;
+        }
+
+        article.left,
+        article.right {
+            width: 50%;
+            /* float:left; */
+        }
+
+        article.left {
+            background-color: cornflowerblue;
+        }
+
+        article.right {
+            background-color: lightskyblue;
+        }
+
+        section.container {display:flex}
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section class="container">
+        <article class="left">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis porro excepturi fugiat qui consequatur officiis! Natus voluptas, dolor laudantium necessitatibus possimus impedit, odio quaerat error molestias nemo saepe dignissimos voluptatum. Est inventore assumenda minima tempora voluptate id culpa quaerat, blanditiis non dignissimos libero, delectus eligendi voluptatem asperiores? Aperiam, eaque cum quaerat quos quia magni accusantium voluptas ipsa perspiciatis numquam error nesciunt corrupti dignissimos atque exercitationem sapiente voluptate debitis facilis animi quibusdam! Recusandae consequuntur obcaecati molestias fugit, sequi sed saepe necessitatibus excepturi eius dicta, vel cum dolorem dolore. Autem voluptate quam incidunt voluptatum tempore rem unde facere numquam, quasi perferendis officia harum ratione officiis non beatae illo cumque aut sequi iste ea. Optio quasi aliquam natus aut maxime, corrupti, nesciunt nostrum repellendus, alias vel sit atque sequi assumenda? Consequuntur molestiae sit quidem? Unde nisi assumenda voluptates alias maiores cum laudantium totam, dolores voluptas deserunt reprehenderit qui distinctio ipsam inventore facere ducimus in. Saepe, facilis fuga? Odio libero magnam eius pariatur autem harum quidem saepe sequi minus, ratione modi expedita temporibus delectus excepturi nulla voluptatibus eligendi officia earum, unde tempore atque error, debitis possimus. Maxime, accusantium? Quidem fugit dicta ullam perspiciatis excepturi sapiente, maxime sed voluptate laboriosam! Voluptatem voluptate soluta animi sit!
+        </article>
+        <article class="right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, distinctio ipsa eos adipisci placeat, vero libero nisi, possimus provident ex voluptatum modi. Ad optio sunt magnam, ea repellendus vel adipisci?</article>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+nav ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    background-color: #222;
+    padding: 2px;
+}
+
+nav {
+    float: right
+}
+
+header.topnav {
+    overflow: hidden;
+}
+
+header, nav {
+    background-color: #444;
+    color: whitesmoke;
+}
+
+a:link {color: white}
+a:visited { color: lightskyblue }
+a:hover { border: white solid thin }
+a:active { color: black; background-color: white;}

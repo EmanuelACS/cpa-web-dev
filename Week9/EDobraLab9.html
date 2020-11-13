@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {width:6em; display: inline-block}
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="">
+        <label for="first">First Name</label>
+        <input type="text" id="first" required pattern="[A-Z][a-z]+">
+        <br>
+        <label for="last">Last Name</label>
+        <input type="text" id="last" required pattern="[A-Z][a-z]+">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" required pattern="\d{3}-\d{3}-\d{4}">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" required>
+        <br><br>
+        <input type="range" name="" id="" min="1" max="10" onchange="rangeVal.value=this.value">
+        <input type="text" readonly size=1 id="rangeVal">
+        <br><br>
+        <input type="color" name="" id="">
+        <br><br>
+        <input type="date"> 
+        <br><br>
+    <fieldset>
+        <h2>Skill Level</h2>
+        <label for="">Beginner</label>
+        <input type="radio" name="level" id="" value="beginner">
+        <br>
+        <label for="">Intermediate</label>
+        <input type="radio" name="level" id="" value="intermediate">
+        <br>
+        <label for="">Advanced</label>
+        <input type="radio" name="level" id="" value="advanced">
+        <br>
+        <label for="">Professional</label>
+        <input type="radio" name="level" id="" value="professional">
+    </fieldset>
+    <fieldset>
+        <h2>Programming Languages</h2>
+        <label for="javascript">Javascript</label>
+        <input type="checkbox" name="language[]" id="">
+        <br>
+        <label for="">Java</label>
+        <input type="checkbox" name="language[]" id="">
+        <br>
+        <label for="">C#</label>
+        <input type="checkbox" name="language[]" id="">
+        <br>
+        <label for="">PHP</label>
+        <input type="checkbox" name="language[]" id="">
+        <br>
+        <label for="">C++</label>
+        <input type="checkbox" name="language[]" id="">
+        <br>
+        <label for="">Python</label>
+        <input type="checkbox" name="language[]" id="">
+        <br>
+    </fieldset>
+    <fieldset>
+        <select name="" id="">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="clerk">Clerk</option>
+            <option value="IT">IT</option>
+            <option value="manager">Manager</option>
+            <option value="consultant">Consultant</option>
+        </select>
+    </fieldset>
+    <br><br>
+    <input type="submit" value="send">
+    </form>
+</body>
+</html>

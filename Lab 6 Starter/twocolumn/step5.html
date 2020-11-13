@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- TODO
+        float left and right articles to the left
+    -->
+
+    <style>
+
+
+        header {
+            background-color: lightcyan;
+            padding: 10px
+        }
+
+        nav {
+            background-color: darkseagreen;
+            padding: 10px
+        }
+
+        section {
+            background-color: lightgray;
+        }
+
+        article.left,
+        article.right {
+            width: 50%;
+        }
+
+        article.left {
+            background-color: cornflowerblue;
+            float: left;
+        }
+
+        article.right {
+            background-color: lightskyblue;
+            float:right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section class="container">
+        <article class="left">Left</article>
+        <article class="right">Right</article>
+    </section>
+
+
+</body>
+
+</html>

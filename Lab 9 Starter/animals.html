@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <style>
+        img{height: 240px;}
+    </style>
+</head>
+<body>
+    <header class="jumbotron">
+        <div class="display-1">Animals</div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-3">
+                <form action="">
+                    <!-- (label+input:radio+br)*4-->
+                    <br>
+                    <label for="">Koala</label>
+                    <input type="radio" name="animal" id="koala" onclick="img.src='images/Koala.jpg'">
+                    <br>
+                    <label for="">Lynx</label>
+                    <input type="radio" name="animal" id="lynx" onclick="img.src='images/Lynx.jpg'">
+                    <br>
+                    <label for="">Meerkat</label>
+                    <input type="radio" name="animal" id="meerkat" onclick="img.src='images/Meerkat.jpg'">
+                    <br>
+                    <label for="">Red Panda</label>
+                    <input type="radio" name="animal" id="red-panda" onclick="img.src='images/Red-panda.jpg'">
+                    <br>
+                    <br>
+                    <br>
+                    <!-- (label+input:checkbox+br)*4-->
+                    <label for="">Koala</label>
+                    <input type="checkbox" name="" id="" onclick="addImg(images,'Koala')">
+                    <br>
+                    <label for="">Lynx</label>
+                    <input type="checkbox" name="" id="">
+                    <br>
+                    <label for="">Meerkat</label>
+                    <input type="checkbox" name="" id="">
+                    <br>
+                    <label for="">Red Panda</label>
+                    <input type="checkbox" name="" id="">
+                    <br>
+                </form>
+            </div>
+            <div class="col-5">
+                <img src="" alt="" id="img">
+            </div>
+            <div class="col-4" id="images">
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        function addImg(target, animal) {
+            var imageFile = "images/" + animal + ".jpg"
+            images.innerHTML += "<img src=" + imageFile + "class='thumb'"
+        }
+    </script>
+</body>
+</html>

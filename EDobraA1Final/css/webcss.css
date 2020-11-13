@@ -1,0 +1,13 @@
+table, td, th { border:thin solid blanchedalmond}
+table { border-collapse: collapse;}
+td, th { padding: 5px; }
+td {text-align: right; padding: 5px 10px;}
+body { background-color: black; color:blanchedalmond;}
+
+header,nav,article,aside{padding:10px}
+header { background-color: darkslategray ; font-size: 36px;}
+nav { background-color: black ; }
+section.container{background-color: lightgrey ; display: flex}
+article {background-color:black;}
+aside { background-color: black; max-width:20em }
+footer { background-color:indigo; padding: 15px;}

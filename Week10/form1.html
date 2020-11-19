@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h3>Form 1</h3>
+    <form action="">
+        <label for="">First Name</label>
+        <input type="text" name="" id="">
+        <label for="">Last Name</label>
+        <input type="text" name="" id="">
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <h3>Form 2a</h3>
+    <form action="">
+        <div class="form-group">
+            <label for="first">First Name</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Last Name</label>
+            <input type="text" class="form-control">
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <br>
+    <h3>Form 2b</h3>
+    <form action="">
+        <div class="form-group">
+            <label for="first">First Name</label>
+            <input type="text" class="form-control">
+            <label for="">Last Name</label>
+            <input type="text" class="form-control">
+            <br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <!-- Don't use it in assignments, teacher doesn't like it-->
+    <h3>Form 3</h3>
+    <form action="" class="form-inline">
+        <div class="form-group">
+            <label for="first">First Name</label>
+            <input type="text" id="first" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Last Name</label>
+            <input type="text" id="last" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="form-control">
+        </div>
+    </form>
+    <br>
+    <br>
+    <h4>Form 4</h4>
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label for="first" class="control-label col-sm-2">First Name</label>
+            <input type="text" id="first" size="6">
+        </div>
+        <div class="form-group">
+            <label for="last" class="control-label col-sm-2">Last Name</label>
+            <input type="text" id="last">
+        </div>
+        <div class="form-group">
+            <label for="">Description</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <div class="form-group border">
+            <div class="checkbox">
+                <label for="yellow" style="background-color: firebrick; padding:0px 12px">
+                    <input type="checkbox" name="" id="red"> Red
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="yellow" style="background-color: yellow; padding:0px 12px">
+                    <input type="checkbox" name="" id="yellow"> Yellow
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="blue" style="background-color: blue; padding:0px 12px">
+                    <input type="checkbox" name="" id="blue"> Blue
+                </label>
+            </div>
+        </div>
+        <div class="form-group border">
+            <label class="checkbox-inline for="red">
+                <input type="checkbox" name="" id="red">Red</label>
+            <label class="checkbox-inline for="blue">
+                <input type="checkbox" name="" id="blue">Blue</label>
+            <label class="checkbox-inline for="yellow">
+                <input type="checkbox" name="" id="yellow">Yellow</label>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

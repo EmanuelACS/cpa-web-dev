@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+label {
+    width: 8em;
+    display: inline-block;
+    color: antiquewhite
+}
+
+input[type="text"] {
+    width: 12em;
+    font-family: cursive;
+    background-color: antiquewhite;
+}
+
+input[type="number"] {
+    width: 3em;
+    font-family: cursive;
+    background-color: antiquewhite;
+}
+
+h1,
+h2,
+h3, h4, p {
+    color: antiquewhite
+}
+
+h5 {
+    color:orange;
+    font-size: 16px;
+}
+
+h6 {
+    color:paleturquoise;
+    font-size: 16px;
+}
+
+select,
+option {
+    background-color: antiquewhite;
+    font-family: cursive;
+}
+
+img {
+    width: 200px;
+    height: 125px;
+    border-radius: 50%;
+    border: 5px solid brown;
+}

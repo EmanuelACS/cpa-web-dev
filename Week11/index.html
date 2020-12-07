@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Awesome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <form action="">
+                    <label for="item">Item Name</label>
+                    <input type="text" name="" id="item">
+                    <label for="color">Item Color</label>
+                    <input type="text" name="" id="color">
+                </form><br>
+                <button onclick="addItem()">Add</button>
+                <button onclick="clearList()">Clear</button>
+            </div>
+            <div class="col-sm-4" id="list">
+                <h2>Color:</h2>
+            </div>
+            <div class="col-sm-4">
+                <table id="table">
+                    <h2>Item: </h2>
+                </table>
+            </div>
+            <i class="fa fa-shopping-cart" aria-hidden="true" style="color: antiquewhite"></i>
+        </div>
+    </div>
+    <script>
+        function addItem() {
+            //alert("Test");
+            //list.innerText += "Hello";
+            //list.innerHTML += "<h2>Hello<h2>";
+            list.innerHTML += "<h3>" + color.value + "</h3>";
+            //table.innerHTML += "<tr><td><h3>" + item.value + "</h3></td></tr>";
+            table.innerHTML += `<tr><td><h3>${item.value}</h3></td></tr>`
+        }
+
+        function clearList() {
+            list.innerHTML = "";
+            table.innerHTML = "";
+        }
+    </script>
+</body>
+</html>
